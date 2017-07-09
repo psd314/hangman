@@ -1,3 +1,52 @@
+body {
+	background-image: url('../images/vegas-bg.jpg');
+}
+
+.wrapper {
+	width: 750px;
+	margin: 70px auto 0;
+	height: 88vh;
+	background: white;
+	border-radius: 2rem;
+}
+
+.hangman,
+div.text-field,
 ul li{
 	display: inline-block;
 }
+
+.hangman,
+.text-field {	
+	float:left;
+}
+
+.text-field {
+	max-width: 300px;
+}
+
+.signImage {
+	width: 25%;
+}
+
+img.signImage {
+	margin-left: 37.5%;
+}
+
+.signWrapper h1 {
+	font-size: 42px;
+	text-align: center;
+}
+
+.signWrapper {
+	padding-top: 50px;
+}
+
+.gameArea {
+	margin-left: 150px;
+}
+
+p#enterText {
+	text-align: center;
+}
+
