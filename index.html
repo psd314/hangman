@@ -5,12 +5,47 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel='stylesheet' type="text/css" href='assets/css/reset.css'>
 	<link rel='stylesheet' type="text/css" href='assets/css/style.css'>
-	<script src="assets/javascript/game.js"></script>
+
 </head>
 <body>
+<div style="display: inline-block; margin: 300px 0 0 400px;">
+	<h1>Hangman, Vegas Addition</h1>
+	<br>
+	
+	
+	<div>
+		<!-- hangman pic -->
+	</div>
 
-	<footer>
+	<div>
+		<div>
+			<p id="enterText">Press enter to start</p>
+			<!-- change to: Guess a letter -->
+		</div>
+		<br>
+		<div>
+			<ul id="blanks">
+				<li>__ &nbsp;</li>
+				<li>__ &nbsp;</li>
+				<li>__ &nbsp;</li>
+				<li>__ &nbsp;</li>
+				<li>__ &nbsp;</li>
+			</ul>
+		</div>
+		<br>
+		<p id="wins">Wins: 0</p>
+		<p id="losses">Losses: 0</p>
+		<p id="guesses">Guesses: 8</p>
+		<ul id="wrong">
+		</ul>
+		<!-- input, ouput - wins, losses, guesses, word display -->
+	</div>
+</div>
+
+	<!-- <footer>
 		<p>&copy; Copyright 2017 Philippe Dixon</p>
-	</footer>
+	</footer> -->
+
+<script src="assets/javascript/game.js"></script>
 </body>
 </html>
