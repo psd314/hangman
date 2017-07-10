@@ -66,14 +66,12 @@ document.onkeyup = function(event) {
 						'<li>' + hangman.word[j].toUpperCase() + '&nbsp</li>'; 
 					}
 				}
-				while (hangman.removeCorrectGuesses.indexOf(hangman.userInput) != -1) {	//remove correct letters from copy of word chosen
+				while (hangman.removeCorrectGuesses.indexOf(hangman.userInput) !== -1) {	//remove correct letters from copy of word chosen
 				hangman.removeCorrectGuesses = hangman.removeCorrectGuesses.replace(hangman.userInput, "");
 				}
 				if (hangman.removeCorrectGuesses.length === 0) {	//update wins and reset game
 					hangman.wins++;
 					document.getElementById('wins').innerHTML = "Wins: " + hangman.wins;
-					// hangman.newGame();
-					// hangman.wordGenerate();
 					audioElement = document.createElement('audio');
   					hangman.winSound();
 					hangman.playAgain();
@@ -101,9 +99,6 @@ document.onkeyup = function(event) {
 		}	
 	}
 }
-// add stick figure pics
-
-
 
 
 
