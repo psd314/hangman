@@ -1,5 +1,13 @@
+html {
+	height: 100%;
+}
+
 body {
 	background-image: url('../images/vegas-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
 }
 
 .wrapper {
@@ -8,6 +16,7 @@ body {
 	height: 88vh;
 	background: white;
 	border-radius: 2rem;
+	/*display: none;*/
 }
 
 .hangman,

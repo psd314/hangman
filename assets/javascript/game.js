@@ -4,8 +4,9 @@ var audioElement;
 hangman = {
 	startText : "Let the games begin!!! Guess a letter:",
 	wordBank : ["poker", "slots", "roulette", "flush", "casino",
-		"elvis", "baccarat", "keno", 
-		"pachinko", "hearts"],	
+		"elvis", "baccarat", "keno", "blackjack", "craps",
+		"pachinko", "hearts", "spades", "diamonds", "clubs", "aces", 
+		"kings", "queens", "jacks"],	
 	wins : 0,
 	losses : 0,
 	guesses : 8,
@@ -16,9 +17,8 @@ hangman = {
 	userInput : "",
 	imagePath : "",
 	imageSource : "assets/images/hangman",
-	initialImage : "assets/images/hangman0.png",
 	wordSelect: function() {	//randomly selects for from wordBank
-		var random = Math.floor(Math.random() * 10);
+		var random = Math.floor(Math.random() * hangman.wordBank.length);
 		var word = this.wordBank[random];
 		console.log(word);
 		return word
