@@ -48,8 +48,8 @@ hangman = {
 		setTimeout(function(){ 
 						hangman.newGame();
 						hangman.wordGenerate();
-						alert('click to play again');
-					}, 50)}	
+						alert('Click to play again');
+					}, 100)}	
 }
 document.onkeyup = function(event) {
 	if(event.key === 'Enter'){
